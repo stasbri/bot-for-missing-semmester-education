@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint --disable=R,C,W `ls ../../src -R|grep .py$|xargs`
+        pylint --disable=R,C,W `ls src -R|grep .py$|xargs`
