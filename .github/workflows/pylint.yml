@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-            pylint --disable=R,C,W $(find src -name "*.py" | xargs)
+            pylint --disable=R,C,W,E0401,E0102 $(find src -name "*.py" | xargs)
