@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bot:
+    build:
+      context: .
+    command: "python /app/src/main.py"
+    entrypoint: ""
+    restart: "no"
+    environment:
+      - DEBUG=1
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
